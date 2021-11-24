@@ -14,7 +14,7 @@ global $pdo;
 try{
 
     //orientada a objetos com pdo
-    $pdo = new PDO("mysql:dbname=".$banco."; host=".$localhost, $user, $pass);
+    $pdo = new PDO("mysql:dbname=".$dbname."; host=".$host, $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 }catch(PDOException $e){
