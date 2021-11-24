@@ -1,6 +1,6 @@
 <?php
 
-$host = "www.db4free.net";
+$host = "85.10.205.173:3306";
 $dbname = "tcc_mulheres";
 $user = "yujuu_jinx";
 $pass = "a738bc27f";
