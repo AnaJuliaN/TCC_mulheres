@@ -2,10 +2,11 @@
 
 session_start();
 
-$localhost = "127.0.0.1";
-$banco  = "tcc_mulheres";
-$user = "root";
-$pass = "";
+$host = "www.db4free.net";
+$dbname = "tcc_mulheres";
+$user = "yujuu_jinx";
+$pass = "a738bc27f";
+$port = "127.0.0.1";
 
 
 global $pdo;

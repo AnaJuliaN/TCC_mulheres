@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost";
+$host = "www.db4free.net";
 $dbname = "tcc_mulheres";
-$user = "root";
-$pass = "";
+$user = "yujuu_jinx";
+$pass = "a738bc27f";
 $port = "127.0.0.1";
 
 try {
