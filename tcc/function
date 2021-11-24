@@ -1,0 +1,18 @@
+function pointcom_user_name_menu( $pointcom_menu_item ) {
+    
+    foreach ( $pointcom_menu_item as $menu_item ) {
+
+        if ( strpos($menu_item->title, '#saudacao#') !== false) {
+            $menu_item->title =  str_replace("#saudacao#",  "Olá", $menu_item->title);
+        }
+
+        if ( strpos($menu_item->title, '#nome#') !== false) {
+            $menu_item->title =  str_replace("#nome#",  wp_get_current_user()->user_firstname, $menu_item->title);
+        }
+
+    }
+
+
+    return $pointcom_menu_item;
+}
+add_filter( 'wp_nav_menu_objects', 'pointcom_user_name_menu' );
